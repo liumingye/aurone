@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta name="renderer" content="webkit" />
+    <meta charset="UTF-8" />
+    <title>一个开始</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=2,user-scalable=yes"
+    />
+    <meta name="author" content="einea" />
+    <meta name="rights" content="aur.one" />
+    <meta name="coprright" content="aur.one" />
+    <meta name="Robots" content="index, follow, noarchive, NOODP" />
+    <meta name="keywords" content="一个开始,桌面主页,搜索,导航,精选,优质" />
+    <meta
+      name="description"
+      content="高效搜索，快捷导航，优质精选，用心整理。桌面主页，从这里开始。"
+    />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta
+      property="og:image"
+      content="images/apple-touch-icon-precomposed.png"
+    />
+    <meta property="og:title" content="一个开始" />
+    <meta property="og:site_name" content="一个开始" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="高效搜索，快捷导航，优质精选，用心整理。桌面主页，从这里开始。"
+    />
+    <meta property="og:url" content="https://aur.one/" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="一个开始" />
+    <meta name="theme-color" content="#273645" />
+    <script>
+      "use strict";
+      var KEY =
+          "6yMpkP@J4VifL7U$m3BvD#c9Gh2&tNR!AFwH0lj?QYIbXs%qZgTSd5WOzC1K^x8E",
+        ASN =
+          "3851286610694967116668165725646657685270276019822182198101853209",
+        OST = "aur.one",
+        now_ver = "2020070109",
+        loa_sta = new Date().getTime(),
+        UP = 0,
+        AEY = KEY + OST,
+        a = 0;
+      a = ASN.substr(a, 2);
+      var o = [],
+        ASE;
+      function A0() {
+        var i = ASN.substr(a, 2),
+          s = AEY.charAt(i);
+        o.push(s), --a, --a && A0();
+      }
+      function A4(io) {
+        for (
+          var N = io.substr(0, 1),
+            E = io.substr(1, ~~N),
+            i_s = io.substr(1 + ~~N, ~~E),
+            i_sl = i_s.length / 2,
+            i_o = io.substr(i_s.length + ~~N + 1),
+            i_cc = [],
+            i_sa = [],
+            i_ar = [],
+            i_se = 0,
+            CC,
+            SC,
+            x = 0;
+          x < i_sl;
+          x++
+        )
+          i_sa.push(i_s.substr(2 * x, 2));
+
+        for (var y = 0; y < i_sl; y++)
+          for (var now_s = i_sa[y].split(""), j = 0; j < now_s[0]; j++)
+            i_ar.push(now_s[1]);
+
+        for (var z = 0; z < i_ar.length; z++)
+          i_cc.push(i_o.substr(i_se, i_ar[z])), (i_se += ~~i_ar[z]);
+
+        return (
+          (CC = o.join("")),
+          (SC = "(" + i_cc.join(", ") + ")"),
+          eval(CC + SC)
+        );
+      }
+
+      !(function () {
+        var i = new Object(),
+          s = location.search;
+
+        A0();
+        o.reverse();
+        ASE = A4(
+          "212534223123312104116116112115584747971171144611111010147"
+        );
+      })();
+    </script>
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="images/apple-touch-icon-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="images/apple-touch-icon-57x57-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="images/apple-touch-icon-72x72-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="images/apple-touch-icon-114x114-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="images/apple-touch-icon-144x144-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="256x256"
+      href="images/apple-touch-icon-256x256-precomposed.png"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/aurone.css" />
+  </head>
+  <body>
+    <script>
+      var ski_c,
+        url_c,
+        night,
+        ski_d = localStorage.getItem("Aurconf"),
+        url_d = localStorage.getItem("AcceptS");
+      ski_d && (ski_c = JSON.parse(ski_d)),
+        url_d && (night = (url_c = JSON.parse(url_d)).night),
+        ((ski_c && 1 == ski_c.c.ski) || night) &&
+          (document.body.className = "ski-dark");
+    </script>
+    <div id="innermotif" class="innermotif">
+      <div id="filtermask" class="filtermask"></div>
+      <div id="leftsidebar" class="leftsidebar"></div>
+      <div class="inner_abstract">
+        <h1>无论你想做什么，重要的是现在开始，这就是一个开始。</h1>
+        <p>
+          在各类优质资源之间轻松切换，并为海外网站提供关键词翻译。收录了生活娱乐、办公学习、创意设计等优质站点，经过用心整理和分类。自定义外观、实时新主题、日历和节日提醒，每一天都是一个开始。
+        </p>
+        <p>搜索和筛选资源的能力，是一种组织能力。</p>
+        <p>桌面主页，从这里开始。</p>
+        <img
+          id="auronelogo"
+          src="images/aurone.jpg"
+          alt="一个开始"
+          title="一个开始"
+        />
+      </div>
+      <div class="innermotif_mobile">
+        <h2 class="mobile_title">一个开始<sup>桌面版</sup></h2>
+        <p class="mobile_conte">收藏了全世界的好网站，</p>
+        <p class="mobile_conte">用心整理和分类，</p>
+        <p class="mobile_conte">提供更多的发现、创造和可能性。</p>
+        <p class="mobile_conte">桌面主页，从这里开始。</p>
+        <p class="mobile_prompt">aur.one<br />使用桌面或笔记本电脑访问</p>
+      </div>
+    </div>
+    <div id="includeall" class="includeall">
+      <div id="configure" class="configure">
+        <div id="consortlist" class="consortlist">
+          <ul id="innersort" class="innersort borc">
+            <li data-index="0" class="active forc bacc_b">常规</li>
+            <li data-index="1">个性化</li>
+            <li data-index="2">高级</li>
+          </ul>
+          <ul id="innersortlist" class="innersortlist">
+            <li class="chapter ftf-tra forc">常规</li>
+            <li>
+              <p id="sort_cue" class="voice">
+                <b>丰富信息</b><span>对控件和站点显示提示和描述</span><i></i>
+              </p>
+            </li>
+            <li class="single">
+              <p class="title">默认搜索</p>
+              <nav id="sort_den">自定义</nav>
+              <ul id="sort_def">
+                <li data-index="0102" class="baccllh">必应</li>
+                <li data-index="0101" class="baccllh">Google</li>
+                <li data-index="0103" class="baccllh">搜狗</li>
+                <li data-index="0100" class="baccllh">百度</li>
+              </ul>
+            </li>
+            <li>
+              <p id="sort_pre" class="voice close">
+                <b>固定默认搜索</b><span>每次访问时使用默认的搜索</span><i></i>
+              </p>
+            </li>
+            <li>
+              <p id="sort_his" class="voice">
+                <b>搜索记录</b><span>显示历史搜索记录列表</span><i></i>
+              </p>
+            </li>
+            <li class="chapter ftf-tra forc">个性化</li>
+            <li class="single">
+              <input id="sort_tit" name="sort_tit" value="一个开始" /><label
+                for="sort_tit"
+                class="title"
+                >页面标题</label
+              >
+            </li>
+            <li class="single" style="height: 136px">
+              <p class="title">外观模式</p>
+              <ul class="sort_radios hori">
+                <li>
+                  <input
+                    type="radio"
+                    id="sort_skil"
+                    name="sort_ski"
+                    checked
+                  /><label for="sort_skil">浅色界面</label>
+                </li>
+                <li>
+                  <input type="radio" id="sort_skid" name="sort_ski" /><label
+                    for="sort_skid"
+                    >深色界面</label
+                  >
+                </li>
+                <li>
+                  <input type="radio" id="sort_skia" name="sort_ski" /><label
+                    for="sort_skia"
+                    >跟随系统</label
+                  >
+                </li>
+              </ul>
+            </li>
+            <li id="sort_colli">
+              <p id="sort_col" class="voice opti">
+                <b>固定颜色</b><span>选择或添加主色调，并固定使用</span><i></i>
+              </p>
+              <ul id="sort_cot" class="sort_cot"></ul>
+              <div class="colorpick">
+                <div id="huepick" class="huepick">
+                  <canvas id="huewheel" class="huewheel"></canvas>
+                  <div id="huepoint" class="huepoint"></div>
+                </div>
+                <div id="satpick" class="satpick">
+                  <div id="satwheel" class="satwheel"></div>
+                  <div id="satpoint" class="satpoint"></div>
+                </div>
+                <div id="ligpick" class="ligpick">
+                  <div id="ligwheel" class="ligwheel"></div>
+                  <div id="ligpoint" class="ligpoint"></div>
+                </div>
+                <input id="sort_icv" name="sort_icv" /><label
+                  for="sort_icv"
+                  class="title"
+                  >#</label
+                >
+              </div>
+            </li>
+            <li id="sort_batli" style="height: 400px">
+              <p id="sort_bac" class="voice opti">
+                <b>固定壁纸</b><span>选择或添加图片，并停止自动更新壁纸</span
+                ><i></i>
+              </p>
+              <ul id="sort_bat" class="sort_bat"></ul>
+              <div id="sort_capacity" class="sort_capacity">
+                <p>图片空间</p>
+                <em><i id="sort_capacity_progress"></i></em
+                ><span id="capacity_used" class="used">已用 0 M</span
+                ><span id="capacity_free" class="free">空余 4 M</span>
+              </div>
+            </li>
+            <li style="height: 148px">
+              <input
+                type="range"
+                id="sort_tra"
+                min="0"
+                max="100"
+                step="1"
+                value="20"
+              /><label for="sort_tra" class="title"
+                ><b>壁纸清晰度</b
+                ><span>搜索页背景清晰度，双击恢复默认</span></label
+              >
+            </li>
+            <li class="single">
+              <p id="sort_hip" class="close"><b>隐藏输入框</b><i></i></p>
+            </li>
+            <li class="single" style="height: 136px">
+              <p class="title">字体粗细</p>
+              <ul class="sort_radios hori">
+                <li>
+                  <input type="radio" id="sort_fons" name="sort_fon" /><label
+                    for="sort_fons"
+                    >精致字体</label
+                  >
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    id="sort_fonn"
+                    name="sort_fon"
+                    checked
+                  /><label for="sort_fonn">清晰字体</label>
+                </li>
+                <li>
+                  <input type="radio" id="sort_fonw" name="sort_fon" /><label
+                    for="sort_fonw"
+                    >鲜明字体</label
+                  >
+                </li>
+              </ul>
+            </li>
+            <li style="height: 144px">
+              <p class="title voice">
+                <b>动画效果</b><span>调整动画程度，从关闭到全开</span>
+              </p>
+              <ul class="sort_radios hori">
+                <li>
+                  <input type="radio" id="sort_actj" name="sort_act" /><label
+                    for="sort_actj"
+                    >极简干脆</label
+                  >
+                </li>
+                <li>
+                  <input type="radio" id="sort_actf" name="sort_act" /><label
+                    for="sort_actf"
+                    >轻量快速</label
+                  >
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    id="sort_acts"
+                    name="sort_act"
+                    checked
+                  /><label for="sort_acts">柔和流畅</label>
+                </li>
+              </ul>
+            </li>
+            <li style="height: 208px">
+              <p class="title voice">
+                <b>离开模式</b><span>长时间未操作，或 F12 离开状态时显示</span>
+              </p>
+              <ul class="sort_radios vert">
+                <li>
+                  <input
+                    type="radio"
+                    id="sort_leaa"
+                    name="sort_lea"
+                    checked
+                  /><label for="sort_leaa"
+                    >时钟日历<span>日历、节日和北京时间</span></label
+                  >
+                </li>
+                <li>
+                  <input type="radio" id="sort_leab" name="sort_lea" /><label
+                    for="sort_leab"
+                    >事项列表<span>通过事项创建的便笺和工具</span></label
+                  >
+                </li>
+                <li>
+                  <input type="radio" id="sort_leac" name="sort_lea" /><label
+                    for="sort_leac"
+                    >壁纸画面<span>仅显示当前壁纸</span></label
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="chapter ftf-tra forc">高级</li>
+            <li>
+              <p id="sort_swi" class="voice close">
+                <b>使用滚轮切换</b><span>使用鼠标滚轮快速切换搜索和导航</span
+                ><i></i>
+              </p>
+            </li>
+            <li style="height: 208px">
+              <p class="title voice">
+                <b>当前标签页打开</b
+                ><span
+                  >默认使用新标签页打开以下页面，开启后在当前标签页打开</span
+                >
+              </p>
+              <ul class="sort_radios vert">
+                <li>
+                  <input type="checkbox" id="sort_opea" name="sort_ope" /><label
+                    for="sort_opea"
+                    ><b>搜索结果</b><span>关键词搜索结果页</span></label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="sort_opeb" name="sort_ope" /><label
+                    for="sort_opeb"
+                    ><b>网址导航</b><span>网站主页导航</span></label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="sort_opec" name="sort_ope" /><label
+                    for="sort_opec"
+                    ><b>其他链接</b><span>资讯、热搜及其他链接</span></label
+                  >
+                </li>
+              </ul>
+            </li>
+            <li id="sort_copli">
+              <p id="sort_cop" class="voice close">
+                <b>标注资源版权</b
+                ><span>对目标站点提供素材、文件下载的主要授权方式进行标注</span
+                ><i></i>
+              </p>
+              <ul class="resolve">
+                <li>Free 免费正版资源或软件</li>
+                <li>Subscription 订阅或付费正版资源或软件</li>
+                <li>Not sure 可能有侵权风险</li>
+                <li id="sort_coprd">站点资源版权标注说明</li>
+              </ul>
+            </li>
+            <li class="not">
+              <p id="sort_loc" class="voice">
+                <b>锁定编辑</b><span>关闭自定义编辑引擎和导航</span><i></i>
+              </p>
+            </li>
+            <li class="not">
+              <p id="sort_sync" class="voice close">
+                <b>云端同步</b><span>将使用记录和设置实时保存到云端</span
+                ><i></i>
+              </p>
+            </li>
+            <li>
+              <p id="sort_export" class="voice">
+                <b>导出导入配置</b
+                ><span>导出当前设置和编辑到其他浏览器，或分享给别人</span>
+              </p>
+            </li>
+            <li>
+              <p id="sort_reset" class="voice">
+                <b>恢复初始状态</b><span>清空所有记录，并重置全部设置</span>
+              </p>
+            </li>
+            <li>
+              <p class="title voice">
+                <b>访问累计</b><span id="sort_total">很抱歉，数据获取失败</span>
+              </p>
+            </li>
+          </ul>
+          <div class="confadeout top"></div>
+          <div class="confadeout bot"></div>
+        </div>
+        <div id="sort_sentences" class="sentences">
+          <p id="sent_con" class="sent_con">联系作者</p>
+          <p id="sent_joi" class="sent_joi">加入群聊</p>
+        </div>
+        <div class="controlist one">
+          <div id="concontrret" class="concontrret forch">
+            <span>返回</span>
+          </div>
+        </div>
+      </div>
+      <div id="navigation" class="navigation">
+        <div id="navselect" class="navselect levelmar">
+          <input id="nav_find" name="nav_find" /><label for="nav_find"
+            >搜索导航<b>Tab</b></label
+          >
+          <div id="selectway" class="selectway">
+            <div id="selectlevel" class="selectlevel"><span>分类</span></div>
+            <div id="selectlabel" class="selectlabel"><span>标签</span></div>
+          </div>
+          <ul id="navlevel" class="navlevel"></ul>
+          <ul id="navlabel" class="navlabel"></ul>
+        </div>
+        <div id="navdetail" class="navdetail levelmar">
+          <ul id="navlsm" class="navlsm ftf-tra"></ul>
+          <ul id="navesm" class="navesm">
+            <li>符合多个</li>
+            <li>符合一个</li>
+          </ul>
+          <ul id="navfid" class="navfid"></ul>
+        </div>
+        <div class="controlist one">
+          <div id="navcontrret" class="navcontrret forch">
+            <span>主屏</span>
+          </div>
+        </div>
+      </div>
+      <div id="topengine" class="topengine">
+        <div id="innerfeed" class="innerfeed"></div>
+        <div id="language" class="language">
+          <span id="lang_face" class="lang_face">English</span
+          ><span id="lang_tran" class="lang_tran">翻译输入</span>
+          <ul id="lang_trch" class="lang_trch"></ul>
+        </div>
+        <div id="searcore" class="searcore">
+          <ul id="fication" class="fication ftf-tra"></ul>
+          <div id="shuttle" class="shuttle"></div>
+          <div id="entryfield" class="entryfield sear">
+            <span id="slogan" class="slogan baccl"></span
+            ><span id="aimlgg" class="aimlgg"></span
+            ><input
+              type="search"
+              id="inwsM"
+              class="ftf-tra forc"
+              name="inwsM"
+            /><label id="inwsMla" class="inwsMla ftf-tra" for="inwsM"
+              >输入</label
+            ><input
+              type="search"
+              id="inwsT"
+              class="ftf-tra"
+              name="inwsT"
+            /><label id="inwsTla" class="inwsTla ftf-tra" for="inwsT"
+              >翻译</label
+            >
+            <div id="inaniu" class="inaniu">
+              <i id="icon_clea" class="icon iconclea"
+                ><span class="ftf-nat">纯净</span></i
+              ><i id="icon_star" class="icon iconstar"
+                ><span class="ftf-nat">收藏</span></i
+              >
+            </div>
+            <div id="implement" class="implement ftf-tra">
+              <div id="implo">
+                官网<b><i>Enter</i></b>
+              </div>
+              <div id="impls">
+                搜索<b><i>Ctrl</i>+<i>Enter</i></b>
+              </div>
+            </div>
+          </div>
+          <div id="engines" class="engines ftf-tra"></div>
+          <div id="inwsmcan" class="inwsmcan"></div>
+          <div id="inwstcan" class="inwstcan"></div>
+        </div>
+        <ul id="searpoint" class="searpoint hide"></ul>
+        <div id="statement" class="statement">
+          <p id="airnotice" class="airnotice time ftf-tra">
+            <span id="air_noti" class="air_noti forch"
+              >桌面主页，从这里开始。</span
+            ><span id="air_time" class="air_time ftf-cla"></span>
+          </p>
+          <p id="copyright" class="copyright">
+            <span id="copy_calend" class="copy_calend forch"></span
+            ><span id="copy_notice" class="copy_notice"></span>
+          </p>
+        </div>
+        <div id="attention" class="attention"></div>
+        <div id="guidecourse" class="guidecourse" data-ver="20200310">
+          <p id="couclose" class="couclose">稍后提醒</p>
+          <p class="coutitle">快速上手</p>
+          <ul id="courselist" class="courselist">
+            <li id="course_1">
+              <p>免费商用优质素材大全</p>
+              <p class="solve">自动演示已就绪<span>20秒</span></p>
+            </li>
+            <li id="course_2">
+              <p>超级实用小技巧</p>
+              <p class="solve">自动演示已就绪<span>20秒</span></p>
+            </li>
+            <li id="course_3">
+              <p>个性化和更多功能</p>
+              <p class="solve">自动演示已就绪<span>60秒</span></p>
+            </li>
+          </ul>
+        </div>
+        <div class="controlist ree">
+          <div id="topcontruse" class="topcontruse forch">
+            <span>登录</span>
+          </div>
+          <div id="topcontrset" class="topcontrset forch">
+            <span>外观</span>
+          </div>
+          <div id="topcontrnav" class="topcontrnav forch">
+            <span>导航</span>
+          </div>
+        </div>
+        <div id="topcontrwor" class="topcontrwor forch"></div>
+      </div>
+    </div>
+    <div id="workslist" class="workslist">
+      <div id="worknew" class="worknew">
+        <p data-index="0" class="creat forch">
+          创建事项<span id="worktotal">create</span>
+        </p>
+        <p data-index="9" class="close baccllh">关闭侧栏</p>
+        <ul>
+          <li class="bacch_b not" data-index="1">
+            ToDo<span>有序组织事项</span>
+          </li>
+          <li class="bacch_b" data-index="2">
+            便笺<span>记录文本和草稿</span>
+          </li>
+          <li class="bacch_b not" data-index="3">
+            书签<span>记录常用网址</span>
+          </li>
+          <li class="bacch_b not" data-index="4">
+            闹钟<span>计时定时和提醒</span>
+          </li>
+          <li class="bacch_b" data-index="5">
+            热榜<span>各平台实时热度</span>
+          </li>
+          <li class="bacch_b" data-index="6">
+            关注<span>订阅关键词新闻</span>
+          </li>
+          <li class="bacch_b not" data-index="7">
+            电台<span>收听音乐和节目</span>
+          </li>
+        </ul>
+      </div>
+      <div id="workitem" class="workitem"></div>
+    </div>
+    <div id="candidate" class="candidate">
+      <div id="assembly" class="assembly"></div>
+    </div>
+    <div id="overmask" class="overmask cove">
+      <div class="durationbar">
+        <div id="durationline" class="durationline"></div>
+      </div>
+      <i id="democursor" class="democursor" style="opacity: 0"></i>
+      <ul id="rightmenu" class="rightmenu"></ul>
+      <div id="swindow" class="swindow"></div>
+      <div id="facemessage" class="facemessage"></div>
+    </div>
+    <div id="overload" class="overload">
+      <div class="loadround">
+        <div class="loadaura"></div>
+        <p id="loadword" class="loadword">0.00 %</p>
+      </div>
+      <div class="loadupgrade">
+        <div class="plainshadow"></div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="478px"
+          height="70px"
+          viewBox="0 0 478 70"
+        >
+          <path
+            class="plainpath strokes1"
+            d="M67,67V51.1V35.1V35C67,17.3,52.7,3,35,3S3,17.3,3,35s14.3,32,32,32c10.6,0,20.1-5.2,25.9-13.2"
+          />
+          <path
+            class="plainpath strokes2"
+            d="M91,3v32c0,17.7,14.3,32,32,32s32-14.3,32-32V3"
+          />
+          <polyline class="plainpath strokes3" points="179,3 179,35 179,67 " />
+          <path class="plainpath strokes4" d="M179,35c0-17.7,14.3-32,32-32" />
+          <rect x="207" y="63" class="plainpoint" width="6" height="6" />
+          <path
+            class="plainpath strokes5"
+            d="M267,3c-17.7,0-32,14.3-32,32s14.3,32,32,32s32-14.3,32-32S284.7,3,267,3"
+          />
+          <path
+            class="plainpath strokes6"
+            d="M323,67V35c0-17.7,14.3-32,32-32s32,14.3,32,32v32"
+          />
+          <path
+            class="plainpath strokes7"
+            d="M426,52l19.8-19.8l19.8-19.8v0C459.8,6.6,451.8,3,443,3c-17.7,0-32,14.3-32,32s14.3,32,32,32s32-14.3,32-32"
+          />
+        </svg>
+      </div>
+      <p class="another">
+        网络环境不佳，可尝试访问：<a
+          class="ftf-cla"
+          href="https://oneinit.com/"
+          targe="_blank"
+          >oneinit.com</a
+        >
+      </p>
+    </div>
+    <script>
+      "use strict";
+      var overload_tg,
+        ie = !!document.all,
+        userAgent = navigator.userAgent,
+        firefox =
+          -1 < userAgent.indexOf("Gecko") && -1 < userAgent.indexOf("Firefox"),
+        edge = /edge/i.test(userAgent),
+        mac = /macintosh|mac os x/i.test(userAgent),
+        ipad = /ipad/i.test(userAgent),
+        ie11 = !1;
+      !(function () {
+        var e = document.getElementById("overmask"),
+          t = document.getElementById("swindow"),
+          a = document.createElement("div"),
+          n = document.createElement("h4"),
+          o = document.createElement("div");
+        var r = 1,
+          i = document.getElementById("overload"),
+          l = document.getElementById("loadword"),
+          s = document.createElement("script");
+        (window.ActiveXObject || "ActiveXObject" in window) && (ie11 = !0),
+          ie || ie11
+            ? ((a.className = "total"),
+              (n.className = "title"),
+              (o.className = "conte"),
+              (n.innerText = "大家都有新浏览器了..."),
+              (o.innerHTML =
+                '<ul class="tips"><li>非常抱歉，为了您的安全和体验，需要更新浏览器。</li><li class="secondary">双核浏览器，请点击地址栏末尾的「e」图标，切换为「极速模式」试试。</li><li>点击下载最新浏览器吧 ~</li><li></li><li><a href="https://www.google.cn/chrome/">Chrome浏览器</a><a href="https://browser.qq.com/">QQ浏览器</a><a href="https://ie.sogou.com/">搜狗浏览器</a><a href="https://browser.360.cn/ee/">360浏览器</a></li></ul>'),
+              a.appendChild(n),
+              a.appendChild(o),
+              t.appendChild(a),
+              (e.className = "overmask show small"))
+            : (s.setAttribute("charset", "UTF-8"),
+              (s.src = "scripts/aurone.js"),
+              (s.onerror = function () {
+                (l.innerText = "Try Again"),
+                  clearInterval(overload_tg),
+                  (this.onerror = null);
+              }),
+              1e3 < new Date().getTime() - loa_sta &&
+                ((i.className = "overload load"),
+                (overload_tg = setInterval(function () {
+                  var e = 10 * Math.random();
+                  (e /= r),
+                    90 < r && clearInterval(overload_tg),
+                    (r += e),
+                    (l.innerText = r.toFixed(2) + " %");
+                }, 50))),
+              document.body.appendChild(s));
+      })();
+    </script>
+  </body>
+</html>
